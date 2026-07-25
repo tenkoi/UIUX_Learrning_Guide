@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard &amp; Enterprise UX — Learning Guide</title>
+<meta name="description" content="A 36-week roadmap from UX fundamentals to enterprise dashboard design. Modules, curated channels, articles, quizzes, glossary, and a teaching adaptation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">▤</span><span>Enterprise&nbsp;UX</span></a>
+    <nav class="navlinks" id="nav" aria-label="Main">
+      <a href="#phases">Phases</a>
+      <a href="#modules">Modules</a>
+      <a href="#pitfalls-sec">Pitfalls</a>
+      <a href="#glossary-sec">Glossary</a>
+      <a href="#channels">Channels</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#track">Track</a>
+    </nav>
+    <div class="pring" title="Overall progress">
+      <svg viewBox="0 0 36 36" aria-hidden="true">
+        <circle class="bg" cx="18" cy="18" r="15"/>
+        <circle class="fg" id="ring" cx="18" cy="18" r="15" stroke-dasharray="0 94"/>
+      </svg>
+      <b id="progress">0%</b>
+    </div>
+    <button class="menu-btn" id="menubtn" aria-label="Toggle menu">Menu</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">36-week roadmap · 14 modules</span>
+        <div class="hero-by">
+          <span class="lbl">Instructor</span>
+          <span class="nm">Mohd Faiz bin Alias</span>
+          <span class="uni">· University of Cyberjaya</span>
+        </div>
+        <h1>Design the software people are <em>assigned</em> to use.</h1>
+        <p class="lede">Marketing sites and mobile apps are a crowded room. ERP, CRM, HRM, LMS, healthcare and finance systems are where the complexity — and the work — actually is. This is the path from UX fundamentals to senior dashboard designer.</p>
+        <div class="hero-cta">
+          <a class="btn btn-dark" href="#modules">Start module 01</a>
+          <a class="btn btn-sun" href="#teaching">Teaching adaptation</a>
+        </div>
+      </div>
+      <div class="stat-stack">
+        <div class="stat"><b>14</b><span>modules across 4 phases</span></div>
+        <div class="stat"><b><span id="qtotal">0</span></b><span>quiz questions with rationale</span></div>
+        <div class="stat"><b><span id="chancount">0</span></b><span>curated channels, each explained</span></div>
+        <div class="stat"><b>20</b><span>domain terms in the glossary</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>ERP</span><span>CRM</span><span>HRM</span><span>LMS</span><span>EHR</span><span>FINTECH</span><span>DATA TABLES</span><span>DESIGN TOKENS</span><span>WCAG 2.2 AA</span><span>DEV MODE</span><span>THREE-WAY MATCH</span><span>APPROVAL CHAINS</span>
+      <span>ERP</span><span>CRM</span><span>HRM</span><span>LMS</span><span>EHR</span><span>FINTECH</span><span>DATA TABLES</span><span>DESIGN TOKENS</span><span>WCAG 2.2 AA</span><span>DEV MODE</span><span>THREE-WAY MATCH</span><span>APPROVAL CHAINS</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white" id="phases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Structure</span>
+      <h2>Four phases, in order</h2>
+      <p>9–12 months part-time at 10–15 hours a week. 5–6 months full-time. The order matters — you cannot build a design system before you understand what an approval chain is.</p>
+    </div>
+    <div class="phase-rail">
+      <div class="phase-card p1"><span class="pn">Phase 1 · Wk 1–8</span><h3>Foundations</h3><p>Research, information architecture, and low-fidelity wireframing with real data.</p></div>
+      <div class="phase-card p2"><span class="pn">Phase 2 · Wk 9–16</span><h3>Tool mastery</h3><p>Figma fluency, Auto Layout that survives resizing, and a tokenized design system.</p></div>
+      <div class="phase-card p3"><span class="pn">Phase 3 · Wk 17–28</span><h3>Specialisation</h3><p>Dashboard patterns, data visualization, responsive rules, accessibility, testing.</p></div>
+      <div class="phase-card p4"><span class="pn">Phase 4 · Wk 29–36</span><h3>Professional practice</h3><p>Handoff, domain knowledge, and defending decisions in business terms.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-shell" id="modules">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Curriculum</span>
+      <h2>The 14 modules</h2>
+      <p>Each module opens with what you will be able to do, then what to learn, the enterprise reality consumer UX does not prepare you for, a practice task for this week, a deliverable, curated sources with reasons, and a knowledge check.</p>
+    </div>
+
+    <div class="searchbar">
+      <input type="search" id="search" placeholder="Search modules — try 'table', 'token', 'accessibility', 'ERP'" aria-label="Search modules">
+      <button class="btn btn-sm" id="clearSearch">Clear</button>
+      <button class="btn btn-sm" id="expandAll">Expand all</button>
+    </div>
+    <p id="matchcount"></p>
+
+    <div class="modlist" id="modlist"></div>
+  </div>
+</section>
+
+<section class="section section-white" id="pitfalls-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Diagnostics</span>
+      <h2>Ten ways this goes wrong</h2>
+      <p>Named failure modes are faster to learn from than principles. If your work has any of these, you know exactly which module to open.</p>
+    </div>
+    <div class="grid-2" id="pitfalls"></div>
+  </div>
+</section>
+
+<section class="section section-pink" id="glossary-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Vocabulary</span>
+      <h2>Domain glossary</h2>
+      <p>The real barrier to enterprise work is not design skill — it is walking into a meeting where everyone says "three-way match" and nobody explains it. Learn the words first.</p>
+    </div>
+    <div class="gtags" id="gtags"></div>
+    <div class="grid-3" id="glossary"></div>
+  </div>
+</section>
+
+<section class="section section-white" id="channels">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Where to learn</span>
+      <h2>Curated channels, with reasons</h2>
+      <p>Each of these was named repeatedly across independent 2025–26 roundups. The note tells you what that creator is specifically good at, so you pick by need rather than subscriber count.</p>
+    </div>
+    <div class="grid-3" id="chandir"></div>
+
+    <div class="note" style="margin-top:32px">
+      <span class="ico" aria-hidden="true">◆</span>
+      <div>
+        <h3>How the video links work</h3>
+        <p>Every module's three videos are hand-picked by the instructor and open directly with the <b>Watch</b> button — 42 in total, all opening in a new tab.</p>
+        <p>Each card also carries a <b>More like this</b> link to a relevant channel or a search filtered to recent uploads, so when a video is eventually taken down or dated, you can still find current material on the same topic from a strong source.</p>
+        <p>The channel note under each video tells you what that creator is specifically good at, so you can go deeper by need rather than by subscriber count.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-shell" id="portfolio">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Output</span>
+      <h2>Build four pieces. Depth beats breadth.</h2>
+      <p>Four deep case studies outperform twelve shallow ones. Skip the unsolicited redesign of a famous consumer app — every reviewer has seen three hundred of them.</p>
+    </div>
+    <div class="grid-4" id="pfgrid"></div>
+
+    <div class="grid-2" style="margin-top:32px">
+      <div class="card">
+        <span class="tagline">Case study structure</span>
+        <h3>Ten sections, in this order</h3>
+        <ol id="csteps" style="padding-left:20px;font-size:14.5px;margin:12px 0 0"></ol>
+      </div>
+      <div class="card" style="background:var(--ink);color:#fff">
+        <span class="tagline" style="background:var(--coral)">Avoid</span>
+        <h3 style="color:#fff">What gets you rejected</h3>
+        <ul style="padding-left:20px;font-size:14.5px;color:#ddd;margin:12px 0 0">
+          <li>Unsolicited redesigns of Spotify, Netflix, or Instagram</li>
+          <li>Dribbble-style dashboards with six charts and no task</li>
+          <li>"I made it purple" as design rationale</li>
+          <li>Screens with no error, empty, or loading states</li>
+          <li>No mention of constraints, stakeholders, or trade-offs</li>
+          <li>Beautiful mockups with no evidence anyone could use them</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white" id="library">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Reference</span>
+      <h2>The library</h2>
+      <p>Seven books that carry the weight, plus the pattern references you will keep open in a second tab for the rest of your career.</p>
+    </div>
+
+    <h3 style="font-size:20px;margin-bottom:16px">Books</h3>
+    <div class="grid-3" id="books" style="margin-bottom:44px"></div>
+
+    <h3 style="font-size:20px;margin-bottom:16px">Pattern references &amp; practice</h3>
+    <div class="artlist">
+      <a class="artlink" href="https://carbondesignsystem.com/" target="_blank" rel="noopener"><strong>Carbon Design System</strong><span>IBM — best enterprise reference ↗</span></a>
+      <a class="artlink" href="https://atlassian.design/" target="_blank" rel="noopener"><strong>Atlassian Design System</strong><span>Complex workflow patterns ↗</span></a>
+      <a class="artlink" href="https://www.lightningdesignsystem.com/" target="_blank" rel="noopener"><strong>Salesforce Lightning</strong><span>CRM at scale ↗</span></a>
+      <a class="artlink" href="https://polaris.shopify.com/" target="_blank" rel="noopener"><strong>Shopify Polaris</strong><span>Commerce admin ↗</span></a>
+      <a class="artlink" href="https://ant.design/" target="_blank" rel="noopener"><strong>Ant Design</strong><span>Densest tables &amp; forms ↗</span></a>
+      <a class="artlink" href="https://m3.material.io/" target="_blank" rel="noopener"><strong>Material 3</strong><span>Token architecture ↗</span></a>
+      <a class="artlink" href="https://experience.sap.com/fiori-design-web/" target="_blank" rel="noopener"><strong>SAP Fiori</strong><span>ERP design language ↗</span></a>
+      <a class="artlink" href="https://www.nngroup.com/topic/application-design/" target="_blank" rel="noopener"><strong>NN/g application design</strong><span>Research-backed articles ↗</span></a>
+      <a class="artlink" href="https://baymard.com/" target="_blank" rel="noopener"><strong>Baymard Institute</strong><span>Forms &amp; checkout research ↗</span></a>
+      <a class="artlink" href="https://ui-patterns.com/" target="_blank" rel="noopener"><strong>UI Patterns</strong><span>Pattern catalogue ↗</span></a>
+      <a class="artlink" href="https://www.data-to-viz.com/" target="_blank" rel="noopener"><strong>From Data to Viz</strong><span>Chart chooser ↗</span></a>
+      <a class="artlink" href="https://www.odoo.com/" target="_blank" rel="noopener"><strong>Odoo</strong><span>Real ERP — feel the pain ↗</span></a>
+      <a class="artlink" href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener"><strong>WCAG 2.2 quick ref</strong><span>The compliance gate ↗</span></a>
+      <a class="artlink" href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener"><strong>WebAIM contrast checker</strong><span>Check before you ship ↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-shell" id="teaching">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">For educators</span>
+      <h2>Teaching adaptation</h2>
+      <p>A 24-week semester structure. Grade on workflow understanding, state coverage, system consistency, accessibility compliance, and handoff quality — not on visual polish.</p>
+    </div>
+
+    <div class="instructor" style="margin-bottom:36px">
+      <div class="avatar" aria-hidden="true">MF</div>
+      <div class="who">
+        <span class="role">Course instructor</span>
+        <h3>Mohd Faiz bin Alias</h3>
+        <p>University of Cyberjaya</p>
+      </div>
+    </div>
+
+    <div class="tbl-wrap" style="margin-bottom:36px">
+      <table>
+        <thead><tr><th scope="col">Weeks</th><th scope="col">Focus</th><th scope="col">How to run it</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <span class="tagline">Assignments</span>
+        <h3>Five that actually work</h3>
+        <ul id="assignlist" style="padding-left:20px;font-size:14.5px;margin:12px 0 0"></ul>
+      </div>
+      <div class="card" style="background:var(--sun)">
+        <span class="tagline" style="background:var(--paper)">Grading rubric</span>
+        <h3>What to weight</h3>
+        <ul style="padding-left:20px;font-size:14.5px;margin:12px 0 0">
+          <li><b>25%</b> — Workflow understanding. Can they explain the business process?</li>
+          <li><b>20%</b> — State coverage. Empty, loading, error, partial, permission-denied.</li>
+          <li><b>20%</b> — System consistency. Tokens used, components reused, no one-offs.</li>
+          <li><b>20%</b> — Accessibility. Contrast, keyboard, semantics, chart alternatives.</li>
+          <li><b>15%</b> — Handoff quality. Could a developer build it without asking?</li>
+        </ul>
+        <p style="margin-top:14px;font-size:13.5px"><b>Visual polish: 0%.</b> It will improve anyway. Nothing else will unless you grade it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white" id="track">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Self-assessment</span>
+      <h2>Milestone checklist</h2>
+      <p>Ten capabilities. When you can do all ten, you are not a junior who knows Figma — you are a designer a business will trust with its operations.</p>
+    </div>
+    <div class="checklist" id="milestones"></div>
+    <p id="pdetail" style="margin-top:24px;font-family:var(--f-mono);font-size:13px;"></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Understand the workflow before you design the interface.</h3>
+        <p>Every senior enterprise designer has the same habit: they can explain the business process from memory before they open Figma. That is the whole differentiator. Everything else in this guide is scaffolding for that one capability.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#phases">Four phases</a>
+        <a href="#modules">14 modules</a>
+        <a href="#pitfalls-sec">Common pitfalls</a>
+        <a href="#glossary-sec">Domain glossary</a>
+        <a href="#channels">Curated channels</a>
+        <a href="#portfolio">Portfolio plan</a>
+        <a href="#library">Library</a>
+        <a href="#teaching">Teaching adaptation</a>
+        <a href="#track">Milestone checklist</a>
+      </div>
+    </div>
+    <div class="foot-rule">
+      Dashboard &amp; Enterprise UX Learning Guide · Instructor: Mohd Faiz bin Alias, University of Cyberjaya · Progress and quiz answers are held in this browser session only · Video links open in a new tab
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
